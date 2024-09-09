@@ -5,24 +5,24 @@
 class PinataGoCli < Formula
   desc "Official Pinata CLI written in Go"
   homepage "https://github.com/PinataCloud/pinata-go-cli"
-  version "0.1.0"
+  version "0.1.2"
   license "MIT"
 
   on_macos do
     on_intel do
-      url "https://github.com/PinataCloud/pinata-go-cli/releases/download/v0.1.0/pinata-go-cli_Darwin_x86_64.tar.gz"
-      sha256 "b111435659a6cc5613d6c878e1b2a89b5cb4df2e61c642737d73d44f366ccafc"
+      url "https://github.com/PinataCloud/pinata-go-cli/releases/download/v0.1.2/pinata-go-cli_Darwin_x86_64.tar.gz"
+      sha256 "05708532d129ca89e5e54e3b90a9989802480a344669158ea41f7ef24e6f2a6a"
 
       def install
-        bin.install "pinata-go-cli"
+        bin.install "pinata-web3"
       end
     end
     on_arm do
-      url "https://github.com/PinataCloud/pinata-go-cli/releases/download/v0.1.0/pinata-go-cli_Darwin_arm64.tar.gz"
-      sha256 "c96e4cbdf221f14a6ff92838526043969afbe78e2eb9ce46ecf8628e99c50cff"
+      url "https://github.com/PinataCloud/pinata-go-cli/releases/download/v0.1.2/pinata-go-cli_Darwin_arm64.tar.gz"
+      sha256 "978d51311db5a97497bbae4c3bf470b05311e6cb2cf6f5c804e4f9fc26aa2544"
 
       def install
-        bin.install "pinata-go-cli"
+        bin.install "pinata-web3"
       end
     end
   end
@@ -30,21 +30,21 @@ class PinataGoCli < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/PinataCloud/pinata-go-cli/releases/download/v0.1.0/pinata-go-cli_Linux_x86_64.tar.gz"
-        sha256 "f14b48344056eda2cd86fad974b69b7a83b542026991ef82c11b508d940faaba"
+        url "https://github.com/PinataCloud/pinata-go-cli/releases/download/v0.1.2/pinata-go-cli_Linux_x86_64.tar.gz"
+        sha256 "b25af018f052691e492835aa2e5988cc682f74075d22bdf513e58b51b16a97b3"
 
         def install
-          bin.install "pinata-go-cli"
+          bin.install "pinata-web3"
         end
       end
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/PinataCloud/pinata-go-cli/releases/download/v0.1.0/pinata-go-cli_Linux_arm64.tar.gz"
-        sha256 "cc1059796bbcb086c7b91ba1a103c060de69d435eaea73be7464ba457caf3094"
+        url "https://github.com/PinataCloud/pinata-go-cli/releases/download/v0.1.2/pinata-go-cli_Linux_arm64.tar.gz"
+        sha256 "b5ac9620edb107aab2fbcf35b391daea7325cdcf4fa4e508e64fb4df6edd8211"
 
         def install
-          bin.install "pinata-go-cli"
+          bin.install "pinata-web3"
         end
       end
     end
